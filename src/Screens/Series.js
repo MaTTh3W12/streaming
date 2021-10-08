@@ -3,8 +3,10 @@ import {View, StyleSheet,Image, Text, ScrollView, Modal, Button, TouchableHighli
 
 export default function Series() {
     return(
-        <View>
-            <Text>Todas nuestras Series</Text>
-        </View>
+        <ScrollView style={{backgroundColor: '#000'}} blurRadius={100}>
+            <View>
+                <Text>Todas nuestras Series</Text>
+            </View>
+        </ScrollView>
     )
 }

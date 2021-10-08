@@ -7,7 +7,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 export default function Movie() {
 
-    const [background,setBackground] = useState({
+    const [backgroundA,setBackgroundA] = useState({
         uri: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA_-tL18_rj9zEcjN6n41NEaJm-kRNF9UeOtvksZ4z_OW6jRA9',
         name: 'Avengers: End Game',
         stat: '2019 ‧ Action/Sci-fi ‧ 3h 2m',
@@ -16,60 +16,170 @@ export default function Movie() {
 
     const [gallery, setgallery] = useState([
         { 
-            image:'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA_-tL18_rj9zEcjN6n41NEaJm-kRNF9UeOtvksZ4z_OW6jRA9', title: 'Avengers: End Game',released: '2019 ‧ Action/Sci-fi ‧ 3h 2m' ,key: '1' , desc: 'After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.' 
+            image:'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA_-tL18_rj9zEcjN6n41NEaJm-kRNF9UeOtvksZ4z_OW6jRA9', 
+            title: 'Avengers: End Game',released: '2019 ‧ Action/Sci-fi ‧ 3h 2m' ,
+            key: '1' , 
+            desc: 'After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.' 
         },
         {
-            image:'https://m.media-amazon.com/images/M/MV5BMWU0MGYwZWQtMzcwYS00NWVhLTlkZTAtYWVjOTYwZTBhZTBiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1012_.jpg', title: 'Bad Boys For Life',released: '2020 ‧ Action/Sci-fi ‧ 2h 4min',  key: '2' , desc: 'Miami detectives Mike Lowrey and Marcus Burnett must face off against a mother-and-son pair of drug lords who wreak vengeful havoc on their city.' 
+            image:'https://m.media-amazon.com/images/M/MV5BMWU0MGYwZWQtMzcwYS00NWVhLTlkZTAtYWVjOTYwZTBhZTBiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1012_.jpg', 
+            title: 'Bad Boys For Life',released: '2020 ‧ Action/Sci-fi ‧ 2h 4min',  
+            key: '2' , 
+            desc: 'Miami detectives Mike Lowrey and Marcus Burnett must face off against a mother-and-son pair of drug lords who wreak vengeful havoc on their city.' 
         },
         { 
-            image:'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxo7Naxu0tjuSEZ9_faYL--aWjx8V5TKr4q2YeenYKXXik-T5P', title: 'Alita: Battle Angel',released: '2019 ‧ Action/Sci-fi ‧ 2h 2m',key: '3', desc: 'Alita, a battle cyborg, is revived by Ido, a doctor, who realises that she actually has the soul of a teenager. Alita then sets out to learn about her past and find her true identity.' 
+            image:'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxo7Naxu0tjuSEZ9_faYL--aWjx8V5TKr4q2YeenYKXXik-T5P', 
+            title: 'Alita: Battle Angel',released: '2019 ‧ Action/Sci-fi ‧ 2h 2m',
+            key: '3', 
+            desc: 'Alita, a battle cyborg, is revived by Ido, a doctor, who realises that she actually has the soul of a teenager. Alita then sets out to learn about her past and find her true identity.' 
         },
         { 
-            image:'https://www.gstatic.com/tv/thumb/v22vodart/15879807/p15879807_v_v8_aa.jpg', title: 'The Irish Man',released: '2019 ‧ Crime/Drama ‧ 3h 30m', key: '4', desc: 'In the 1950s, truck driver Frank Sheeran gets involved with Russell Bufalino and his Pennsylvania crime family. As Sheeran climbs the ranks to become a top hit man, he also goes to work for Jimmy Hoffa.' 
+            image:'https://www.gstatic.com/tv/thumb/v22vodart/15879807/p15879807_v_v8_aa.jpg', 
+            title: 'The Irish Man',released: '2019 ‧ Crime/Drama ‧ 3h 30m', 
+            key: '4', 
+            desc: 'In the 1950s, truck driver Frank Sheeran gets involved with Russell Bufalino and his Pennsylvania crime family. As Sheeran climbs the ranks to become a top hit man, he also goes to work for Jimmy Hoffa.' 
         },
         { 
-            image:'https://m.media-amazon.com/images/M/MV5BNjRmNDI5MjMtMmFhZi00YzcwLWI4ZGItMGI2MjI0N2Q3YmIwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1013_.jpg', title: 'Black Widow',released: '2021 ‧ Action/Sci-fi ‧ 2h 14min', key: '5', desc: 'Natasha Romanoff se enfrenta a las partes más oscuras de su pasado cuando surge una peligrosa conspiración vinculada a él.' 
+            image:'https://m.media-amazon.com/images/M/MV5BNjRmNDI5MjMtMmFhZi00YzcwLWI4ZGItMGI2MjI0N2Q3YmIwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1013_.jpg', 
+            title: 'Black Widow',released: '2021 ‧ Action/Sci-fi ‧ 2h 14min', 
+            key: '5', 
+            desc: 'Natasha Romanoff se enfrenta a las partes más oscuras de su pasado cuando surge una peligrosa conspiración vinculada a él.' 
         },
         { 
-            image:'https://i.pinimg.com/originals/99/03/9a/99039a6afb682e42c9a12556071b38c9.jpg', title: 'John Wick Chapter 3',released: '2019 ‧ Action/Thriller ‧ 2h 10m', key: '5', desc: 'John Wick is declared excommunicado and a hefty bounty is set on him after he murders an international crime lord. He sets out to seek help to save himself from ruthless hitmen and bounty hunters.' 
+            image:'https://i.pinimg.com/originals/99/03/9a/99039a6afb682e42c9a12556071b38c9.jpg', 
+            title: 'John Wick Chapter 3',released: '2019 ‧ Action/Thriller ‧ 2h 10m', 
+            key: '6', 
+            desc: 'John Wick is declared excommunicado and a hefty bounty is set on him after he murders an international crime lord. He sets out to seek help to save himself from ruthless hitmen and bounty hunters.' 
         },
     ]);
+
+    const [background,setBackground] = useState({
+        uri: 'https://m.media-amazon.com/images/M/MV5BMTg3NTI5MzQ2Ml5BMl5BanBnXkFtZTcwMzU1MTYyMQ@@._V1_FMjpg_UX216_.jpg',
+        name: 'The Notebook',
+        stat: '2004 ‧ Drama/Romance ‧ 2h 3min',
+        desc: 'Un joven pobre pero apasionado se enamora de una joven rica que le da un sentido de libertad, pero pronto son separados a causa de a sus diferencias sociales.'
+    })
 
     const [romance, setromance] = useState([
         { 
-            image:'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA_-tL18_rj9zEcjN6n41NEaJm-kRNF9UeOtvksZ4z_OW6jRA9', title: 'Conjuro',released: '2019 ‧ Action/Sci-fi ‧ 3h 2m' ,key: '1' , desc: 'After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.' 
+            image:'https://m.media-amazon.com/images/M/MV5BMTg3NTI5MzQ2Ml5BMl5BanBnXkFtZTcwMzU1MTYyMQ@@._V1_FMjpg_UX216_.jpg', 
+            title: 'The Notebook',
+            released: '2004 ‧ Drama/Romance ‧ 2h 3min',
+            key: '7' , 
+            desc: 'Un joven pobre pero apasionado se enamora de una joven rica que le da un sentido de libertad, pero pronto son separados a causa de a sus diferencias sociales.' 
         },
         {
-            image:'https://www.spotlightstheatre.co.uk/wordpress/wp-content/uploads/2019/11/f_frozen2_header_mobile_18432_d258f93f.jpeg', title: 'It',released: '2019 ‧ Animation/Musical ‧ 1h 43m',  key: '2' , desc: 'Elsa the Snow Queen has an extraordinary gift -- the power to create ice and snow. But no matter how happy she is to be surrounded by the people of Arendelle, Elsa finds herself strangely unsettled.' 
+            image:'https://www.spotlightstheatre.co.uk/wordpress/wp-content/uploads/2019/11/f_frozen2_header_mobile_18432_d258f93f.jpeg', 
+            title: 'Frozen II',
+            released: '2019 ‧ Romance/Musical ‧ 1h 43m',  
+            key: '8' , 
+            desc: 'Elsa the Snow Queen has an extraordinary gift -- the power to create ice and snow. But no matter how happy she is to be surrounded by the people of Arendelle, Elsa finds herself strangely unsettled.' 
         },
         { 
-            image:'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxo7Naxu0tjuSEZ9_faYL--aWjx8V5TKr4q2YeenYKXXik-T5P', title: 'The Unholy',released: '2019 ‧ Action/Sci-fi ‧ 2h 2m',key: '3', desc: 'Alita, a battle cyborg, is revived by Ido, a doctor, who realises that she actually has the soul of a teenager. Alita then sets out to learn about her past and find her true identity.' 
+            image:'https://m.media-amazon.com/images/M/MV5BNzI3YTQzZDAtNzBlYS00YTNmLWJlZTAtZGQxYjU1N2ViNDMzXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_FMjpg_UY720_.jpg', 
+            title: 'After We Fell',
+            released: '2021 ‧ Romance/Drama ‧ 1h 39min',
+            key: '9', 
+            desc: 'Alita, a battle cyborg, is revived by Ido, a doctor, who realises that she actually has the soul of a teenager. Alita then sets out to learn about her past and find her true identity.' 
         },
         { 
-            image:'https://www.gstatic.com/tv/thumb/v22vodart/15879807/p15879807_v_v8_aa.jpg', title: 'Blood Red Sky',released: '2019 ‧ Crime/Drama ‧ 3h 30m', key: '4', desc: 'In the 1950s, truck driver Frank Sheeran gets involved with Russell Bufalino and his Pennsylvania crime family. As Sheeran climbs the ranks to become a top hit man, he also goes to work for Jimmy Hoffa.' 
+            image:'https://m.media-amazon.com/images/M/MV5BYTlkYmM2NjAtMDkyZi00M2JiLThjZmItMjUzZDhiMDg2NGJmXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1026_.jpg', 
+            title: 'Marley & Me',
+            released: '2008 ‧ Family/Romance ‧ 1h 51min', 
+            key: '10', 
+            desc: 'Una familia aprende importantes lecciones de vida de su adorable, pero travieso y neurótico perro.' 
         },
         { 
-            image:'https://i.pinimg.com/originals/99/03/9a/99039a6afb682e42c9a12556071b38c9.jpg', title: 'Host',released: '2019 ‧ Action/Thriller ‧ 2h 10m', key: '5', desc: 'John Wick is declared excommunicado and a hefty bounty is set on him after he murders an international crime lord. He sets out to seek help to save himself from ruthless hitmen and bounty hunters.' 
+            image:'https://m.media-amazon.com/images/M/MV5BMTQ2NjE4NDE2NV5BMl5BanBnXkFtZTgwOTcwNDE5NzE@._V1_FMjpg_UY720_.jpg', 
+            title: 'Me Before You',
+            released: '2016 ‧ Romance/Drama ‧ 1h 46min', 
+            key: '11', 
+            desc: 'En un pueblo pequeño, una chica entabla una relación improbable con el hombre al que está cuidando, recientemente paralizado.' 
+        },
+        { 
+            image:'https://m.media-amazon.com/images/M/MV5BMTk0Mzg1MTU1MF5BMl5BanBnXkFtZTgwMjU3ODI2MzE@._V1_FMjpg_UX509_.jpg', 
+            title: 'Love, Rosie',
+            released: '2014 ‧ Comedy/Romance ‧ 1h 42min', 
+            key: '12', 
+            desc: 'Rosie y Alex han sido mejores amigos desde que tenían 5 años, por lo que posiblemente no podrían ser el uno para el otro ... ¿o podrían? Cuando se trata del amor, la vida y tomar las decisiones correctas, estos dos son sus peores enemigos.' 
         },
     ]);
 
+    const [backgroundC,setBackgroundC] = useState({
+        uri: 'https://m.media-amazon.com/images/M/MV5BYTNjNzFiZTItNDM5NS00ODBhLTk5NmMtYzUyZWRmOWJjOTI3XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UY720_.jpg',
+        name: 'Free Guy',
+        stat: '2021 ‧ Adventure/Comedy ‧ 1h 55min',
+        desc: 'Un empleado de banco descubre que en realidad es un personaje dentro de un videojuego.'
+    });
+
+    const [comedy, setcomedy] = useState([
+        { 
+            image:'https://m.media-amazon.com/images/M/MV5BYTNjNzFiZTItNDM5NS00ODBhLTk5NmMtYzUyZWRmOWJjOTI3XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UY720_.jpg', 
+            title: 'Free Guy',
+            released: '2021 ‧ Adventure/Comedy ‧ 1h 55min',
+            key: '13' , 
+            desc: 'Un empleado de banco descubre que en realidad es un personaje dentro de un videojuego.' 
+        },
+        {
+            image:'https://m.media-amazon.com/images/M/MV5BMjA0ODYwNzU5Nl5BMl5BanBnXkFtZTcwNTI1MTgxMw@@._V1_FMjpg_UY720_.jpg', 
+            title: 'Grown Ups',
+            released: '2010 ‧ Comedy ‧ 1h 42min',  
+            key: '14' , 
+            desc: 'Después de la muerte de su entrenador de baloncesto de la escuela secundaria, cinco buenos amigos y ex compañeros de equipo se reúnen para un fin de semana de vacaciones del 4 de julio.' 
+        },
+        { 
+            image:'https://m.media-amazon.com/images/M/MV5BYTI3NTdhMWEtZWE2Mi00NTBmLWJjMWYtOTAwMmJlZjc0YTZhXkEyXkFqcGdeQXVyMjkwMjY1MjI@._V1_FMjpg_UY720_.jpg', 
+            title: 'Taking the Reins',
+            released: '2021 ‧ Comedy/Drama ‧ 1h 24min',
+            key: '15', 
+            desc: 'A writer discovers what ended her marriage and why she stopped riding horses after going back to her family ranch.' 
+        },
+        { 
+            image:'https://m.media-amazon.com/images/M/MV5BOTQwMjRmNWQtYzFmMC00ZTBhLTlkYzMtNDFmZGY0NjlkNTJhXkEyXkFqcGdeQXVyMTA2MDQ3MTQ3._V1_FMjpg_UY720_.jpg', 
+            title: 'Everybodys Talking About Jamie',
+            released: '2021 ‧ Comedy/Drama ‧ 1h 55min', 
+            key: '16', 
+            desc: 'Adaptación cinematográfica del musical sobre un adolescente de Sheffield, Inglaterra, que quiere ser una drag queen. Con el apoyo de su madre y su mejor amiga, supera los prejuicios y se convierte en el hombre que elige ser.' 
+        },
+        { 
+            image:'https://m.media-amazon.com/images/M/MV5BYWQwMTJhMDMtY2I5My00ODkyLWJhYjYtNjdjMWRjOWZhNGFiXkEyXkFqcGdeQXVyMTI3ODczNTk2._V1_FMjpg_UY720_.jpg', 
+            title: 'Hotel Transylvania: Transformania',
+            released: '2022 ‧ Animation/Comedy ‧ 1h 50min', 
+            key: '17', 
+            desc: 'La banda de Drac está de vuelta como nunca antes para el último capítulo de "Hotel Transilvania".' 
+        },
+        { 
+            image:'https://m.media-amazon.com/images/M/MV5BZTQyNTU0MDktYTFkYi00ZjNhLWE2ODctMzBkM2U1ZTk3YTMzXkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_FMjpg_UY720_.jpg', 
+            title: 'Luca',
+            released: '2021 ‧ Animation/Comedy ‧ 1h 35min', 
+            key: '18', 
+            desc: 'En la Riviera italiana, una amistad tan fuerte como inesperada surge entre un ser humano y un monstruo marino camuflado como tal.' 
+        },
+    ]);
+
+
+
     const carouselRef = useRef(null);
 
-    const {width, height} = Dimensions.get('window')
+    const {width, height} = Dimensions.get('window');
+
+    const routeRecents = () => {
+        props.navigation.navigate('Video');
+    }
 
     const renderItem = ({item, index}) => {
         return (
             <View>
                 <TouchableOpacity
                     onPress={() => 
-                        { 
-                        carouselRef.current.scrollToIndex(index);
-                        setBackground({
-                            uri: item.image,
-                            name: item.title,
-                            stat: item.released,
-                            desc: item.desc
-                        })
+                        {
+                            carouselRef.current.scrollToIndex(index);
+                            setBackground({
+                                uri: item.image,
+                                name: item.title,
+                                stat: item.released,
+                                desc: item.desc
+                            })
                         }
                     }
             >
@@ -83,40 +193,8 @@ export default function Movie() {
     }
 
     return(
-        <ScrollView>
-            <View style={styles.carouselContentContainer}>
-                <View style={{...StyleSheet.absoluteFill, backgroundColor: '#000'}}>
-                    <ImageBackground source={{ uri: background.uri  }} style={styles.ImageBg} blurRadius={10}>
-                        <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold', marginLeft: 10, marginVertical:10 }}>Accion</Text>
-                        <View style={styles.carouselContainerView}>
-                            <Carousel style={styles.Carousel}
-                                data={gallery}                            
-                                renderItem={renderItem}
-                                itemWidth={200}
-                                containerWidth={width - 20}
-                                separatorWidth={0}
-                                ref={carouselRef}
-                                inActiveOpacity={0.4}
-                            />
-                        </View>
-                        <View style={styles.movieInfoContainer}>
-                            <View style={{ justifyContent: 'center'}}>
-                                <Text style={styles.movieName}>{background.name}</Text>
-                                <Text style={styles.movieStat}>{background.stat}</Text>
-                            </View>
-                            <TouchableOpacity style={styles.playIconContainer}>
-                                <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
-                            </TouchableOpacity>
-                        </View>
-                        <View style={{paddingHorizontal: 14, marginTop: 14}}>
-                            <Text style={{color: 'white', opacity: 0.8, lineHeight: 20}}>
-                                {background.desc}
-                            </Text>
-                        </View>
-                    </ImageBackground>
-                </View>
-            </View>
-
+        <ScrollView style={{backgroundColor: '#000'}} blurRadius={100}>
+            <StatusBar backgroundColor='#000' barStyle='light-content' />
             <View style={styles.carouselContentContainer}>
                 <View style={{...StyleSheet.absoluteFill, backgroundColor: '#000'}}>
                     <ImageBackground source={{ uri: background.uri  }} style={styles.ImageBg} blurRadius={10}>
@@ -142,8 +220,119 @@ export default function Movie() {
                             </TouchableOpacity>
                         </View>
                         <View style={{paddingHorizontal: 14, marginTop: 14}}>
-                            <Text style={{color: 'white', opacity: 0.8, lineHeight: 20}}>
+                            <Text style={{color: '#fff', fontWeight: '700', opacity: 0.8, lineHeight: 20}}>
                                 {background.desc}
+                            </Text>
+                        </View>
+                    </ImageBackground>
+                </View>
+            </View>
+
+            <View style={styles.carouselContentContainer}>
+                <View style={{...StyleSheet.absoluteFill, backgroundColor: '#000'}}>
+                    <ImageBackground source={{ uri: backgroundA.uri  }} style={styles.ImageBg} blurRadius={10}>
+                        <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold', marginLeft: 10, marginVertical:10 }}>Accion</Text>
+                        <View style={styles.carouselContainerView}>
+                            <Carousel style={styles.Carousel}
+                                data={gallery}                            
+                                renderItem={({item, index}) =>{
+                                    return(
+                                        <View>
+                                            <TouchableOpacity
+                                                onPress={() => 
+                                                    { 
+                                                    carouselRef.current.scrollToIndex(index);
+                                                    setBackgroundA({
+                                                        uri: item.image,
+                                                        name: item.title,
+                                                        stat: item.released,
+                                                        desc: item.desc
+                                                    })
+                                                    }
+                                                }
+                                            >
+                                                <Image source={{uri: item.image}} style={styles.carouselImage} />
+                                                <Text style={styles.carouselText}>{item.title}</Text>
+                                            </TouchableOpacity>
+                                        
+                                        </View>
+                                    )
+                                }}
+                                itemWidth={200}
+                                containerWidth={width - 20}
+                                separatorWidth={0}
+                                ref={carouselRef}
+                                inActiveOpacity={0.4}
+                            />
+                        </View>
+                        <View style={styles.movieInfoContainer}>
+                            <View style={{ justifyContent: 'center'}}>
+                                <Text style={styles.movieName}>{backgroundA.name}</Text>
+                                <Text style={styles.movieStat}>{backgroundA.stat}</Text>
+                            </View>
+                            <TouchableOpacity style={styles.playIconContainer}>
+                                <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
+                            </TouchableOpacity>
+                        </View>
+                        <View style={{paddingHorizontal: 14, marginTop: 14}}>
+                            <Text style={{color: 'white', opacity: 0.8, lineHeight: 20}}>
+                                {backgroundA.desc}
+                            </Text>
+                        </View>
+                    </ImageBackground>
+                </View>
+            </View>
+
+            <View style={styles.carouselContentContainer}>
+                <View style={{...StyleSheet.absoluteFill, backgroundColor: '#000'}}>
+                    <ImageBackground source={{ uri: backgroundC.uri  }} style={styles.ImageBg} blurRadius={10}>
+                        <Text style={{color: 'white', fontSize: 24, fontWeight: 'bold', marginLeft: 10, marginVertical:10 }}>Comedia</Text>
+                        <View style={styles.carouselContainerView}>
+                            <Carousel style={styles.Carousel}
+                                data={comedy}                            
+                                renderItem={({item, index}) =>{
+                                    return(
+                                        <View>
+                                            <TouchableOpacity
+                                                onPress={() => 
+                                                    { 
+                                                    carouselRef.current.scrollToIndex(index);
+                                                    console.log("Comedy",index)
+                                                    setBackgroundC({
+                                                        uri: item.image,
+                                                        name: item.title,
+                                                        stat: item.released,
+                                                        desc: item.desc
+                                                    })
+                                                    }
+                                                }
+                                            >
+                                                <Image source={{uri: item.image}} style={styles.carouselImage} />
+                                                <Text style={styles.carouselText}>{item.title}</Text>
+                                            </TouchableOpacity>
+                                        
+                                        </View>
+                                    )
+                                }}
+                                itemWidth={200}
+                                containerWidth={width - 20}
+                                separatorWidth={0}
+                                ref={carouselRef}
+                                inActiveOpacity={0.4}
+                            />
+                        </View>
+                        <View style={styles.movieInfoContainer}>
+                            <View style={{ justifyContent: 'center'}}>
+                                <Text style={styles.movieName}>{backgroundC.name}</Text>
+                                <Text style={styles.movieStat}>{backgroundC.stat}</Text>
+                            </View>
+                            <TouchableOpacity style={styles.playIconContainer}>
+                                <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
+                            </TouchableOpacity>
+                        </View>
+                        <View style={{paddingHorizontal: 14, marginTop: 14}}>
+                            <Text style={{color: 'white', opacity: 0.8, lineHeight: 20}}>
+                                {backgroundC.desc}
                             </Text>
                         </View>
                     </ImageBackground>
@@ -206,7 +395,7 @@ const styles = StyleSheet.create({
 
     movieName: {
         paddingLeft: 14,
-        color: 'white', 
+        color: '#fff', 
         fontWeight: 'bold', 
         fontSize: 20,
         marginBottom: 6
@@ -214,7 +403,7 @@ const styles = StyleSheet.create({
 
     movieStat: {
         paddingLeft: 14,
-        color: 'white', 
+        color: '#fff', 
         fontWeight: 'bold', 
         fontSize: 14, 
         opacity: 0.8

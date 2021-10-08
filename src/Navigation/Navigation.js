@@ -9,7 +9,7 @@ import Lastest from '../Screens/Lastest';
 
 const Tab = createMaterialBottomTabNavigator();
 
-export default function Navigation() {
+export default function Navigation(props) {
     return (
         <Tab.Navigator
             initialRouteName="Movie"
