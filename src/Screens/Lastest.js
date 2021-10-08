@@ -4,9 +4,7 @@ import {View, StyleSheet,Image, Text, ScrollView, Modal, Button, TouchableHighli
 export default function Lastest() {
     return(
         <View>
-            <Text>Todas nuestras peliculas</Text>
+            <Text>Todo lo proximo a estreno</Text>
         </View>
     )
 }
-
-export default Lastest();

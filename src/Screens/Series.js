@@ -4,9 +4,7 @@ import {View, StyleSheet,Image, Text, ScrollView, Modal, Button, TouchableHighli
 export default function Series() {
     return(
         <View>
-            <Text>Todas nuestras peliculas</Text>
+            <Text>Todas nuestras Series</Text>
         </View>
     )
 }
-
-export default Series();
