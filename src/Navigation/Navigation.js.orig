@@ -12,7 +12,11 @@ import Details from '../Screens/Details';
 const Tab = createMaterialBottomTabNavigator();
 const Stack = createStackNavigator();
 
+<<<<<<< Updated upstream
+export default function Navigation(props) {
+=======
 function tabBar() {
+>>>>>>> Stashed changes
     return (
         <Tab.Navigator
             initialRouteName="Movie"

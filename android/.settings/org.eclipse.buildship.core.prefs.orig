@@ -5,7 +5,11 @@ connection.gradle.distribution=GRADLE_DISTRIBUTION(WRAPPER)
 connection.project.dir=
 eclipse.preferences.version=1
 gradle.user.home=
+<<<<<<< Updated upstream
+java.home=/usr/lib/jvm/jdk-15.0.2
+=======
 java.home=/home/alejandro/.sdkman/candidates/java/current
+>>>>>>> Stashed changes
 jvm.arguments=
 offline.mode=false
 override.workspace.settings=true
