@@ -2,8 +2,6 @@ import { StyleSheet, Text, View, Image, TouchableOpacity, Dimensions, StatusBar,
 import React, {useRef, useState, useEffect} from 'react';
 import Carousel from 'react-native-anchor-carousel';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import Feather from 'react-native-vector-icons/Feather';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 export default function Movie() {
 
