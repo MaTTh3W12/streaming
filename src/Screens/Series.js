@@ -3,7 +3,10 @@ import {View, StyleSheet,Image, Text, ScrollView, TouchableOpacity} from 'react-
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 
-export default function Series() {
+export default function Series(props) {
+
+    const { navigation } = props;
+
     return(
         <ScrollView style={{backgroundColor: '#000'}} >
             <View style={styles.listContentContainer}>
@@ -16,7 +19,11 @@ export default function Series() {
                         <View style={styles.boxListText}>
                             <Text style={styles.boxTextDesc}>Rick and Morty</Text>
                             <Text style={styles.boxTextDesc}>Seasons: 5</Text>
-                            <TouchableOpacity style={styles.playIconContainer}>
+                            <TouchableOpacity style={styles.playIconContainer} onPress={() => {
+                                navigation.navigate("Details", {
+                                    item: 'Tm7dFM_v57A'
+                                });
+                            }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
                             </TouchableOpacity>
                         </View>
@@ -26,7 +33,11 @@ export default function Series() {
                         <View style={styles.boxListText}>
                             <Text style={styles.boxTextDesc}>Sex Education</Text>
                             <Text style={styles.boxTextDesc}>Seasons: 3</Text>
-                            <TouchableOpacity style={styles.playIconContainer}>
+                            <TouchableOpacity style={styles.playIconContainer} onPress={() => {
+                                navigation.navigate("Details", {
+                                    item: 'zmgYlYw7Uwk'
+                                });
+                            }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
                             </TouchableOpacity>
                         </View>
@@ -36,7 +47,11 @@ export default function Series() {
                         <View style={styles.boxListText}>
                             <Text style={styles.boxTextDesc}>Friends</Text>
                             <Text style={styles.boxTextDesc}>Seasons: 10</Text>
-                            <TouchableOpacity style={styles.playIconContainer}>
+                            <TouchableOpacity style={styles.playIconContainer} onPress={() => {
+                                navigation.navigate("Details", {
+                                    item: 'MfvvhM6IJS0'
+                                });
+                            }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
                             </TouchableOpacity>
                         </View>
@@ -49,7 +64,11 @@ export default function Series() {
                         <View style={styles.boxListText}>
                             <Text style={styles.boxTextDesc}>Squid Game</Text>
                             <Text style={styles.boxTextDesc}>Seasons: 1</Text>
-                            <TouchableOpacity style={styles.playIconContainer}>
+                            <TouchableOpacity style={styles.playIconContainer} onPress={() => {
+                                navigation.navigate("Details", {
+                                    item: 'oqxAJKy0ii4'
+                                });
+                            }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
                             </TouchableOpacity>
                         </View>
@@ -59,7 +78,11 @@ export default function Series() {
                         <View style={styles.boxListText}>
                             <Text style={styles.boxTextDesc}>What If...?</Text>
                             <Text style={styles.boxTextDesc}>Seasons: 1</Text>
-                            <TouchableOpacity style={styles.playIconContainer}>
+                            <TouchableOpacity style={styles.playIconContainer} onPress={() => {
+                                navigation.navigate("Details", {
+                                    item: 'TV3s2STA7NU'
+                                });
+                            }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
                             </TouchableOpacity>
                         </View>
@@ -69,7 +92,11 @@ export default function Series() {
                         <View style={styles.boxListText}>
                             <Text style={styles.boxTextDesc}>Game of Thrones</Text>
                             <Text style={styles.boxTextDesc}>Seasons: 8</Text>
-                            <TouchableOpacity style={styles.playIconContainer}>
+                            <TouchableOpacity style={styles.playIconContainer} onPress={() => {
+                                navigation.navigate("Details", {
+                                    item: 'JGYizS6kRTE'
+                                });
+                            }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
                             </TouchableOpacity>
                         </View>
@@ -83,7 +110,11 @@ export default function Series() {
                         <View style={styles.boxListText}>
                             <Text style={styles.boxTextDesc}>Lost</Text>
                             <Text style={styles.boxTextDesc}>Seasons: 6</Text>
-                            <TouchableOpacity style={styles.playIconContainer}>
+                            <TouchableOpacity style={styles.playIconContainer} onPress={() => {
+                                navigation.navigate("Details", {
+                                    item: 'KTu8iDynwNc'
+                                });
+                            }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
                             </TouchableOpacity>
                         </View>
@@ -93,7 +124,11 @@ export default function Series() {
                         <View style={styles.boxListText}>
                             <Text style={styles.boxTextDesc}>The Witcher</Text>
                             <Text style={styles.boxTextDesc}>Seasons: 3</Text>
-                            <TouchableOpacity style={styles.playIconContainer}>
+                            <TouchableOpacity style={styles.playIconContainer} onPress={() => {
+                                navigation.navigate("Details", {
+                                    item: 'ETY44yszyNc'
+                                });
+                            }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
                             </TouchableOpacity>
 
@@ -104,7 +139,11 @@ export default function Series() {
                         <View style={styles.boxListText}>
                             <Text style={styles.boxTextDesc}>Loki</Text>
                             <Text style={styles.boxTextDesc}>Seasons: 2</Text>
-                            <TouchableOpacity style={styles.playIconContainer}>
+                            <TouchableOpacity style={styles.playIconContainer} onPress={() => {
+                                navigation.navigate("Details", {
+                                    item: 'KcBStos46EM'
+                                });
+                            }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
                             </TouchableOpacity>
                         </View>
