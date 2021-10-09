@@ -13,9 +13,9 @@ export default function Lastest() {
                     <YouTube
                         apiKey={'AIzaSyBNTpKXLmASqFaubwPSOdC2SndWWOGFHe4'}
                         videoId={'oNGY4FkZkhQ'}
-                        play
+                        key={1}
                         loop
-                        style={{ alignSelf: 'stretch', height: 500 }}
+                        style={{ alignSelf: 'stretch', height: 200 }}
                     />
                     </View>
                     <Text style={{color: '#fff', fontSize: 20, letterSpacing: 1}}>Serie</Text>
@@ -27,9 +27,9 @@ export default function Lastest() {
                     <YouTube
                         apiKey={'AIzaSyBNTpKXLmASqFaubwPSOdC2SndWWOGFHe4'}
                         videoId={'2y22ik6yOKk'}
-                        play
+                        key={2}
                         loop
-                        style={{ alignSelf: 'stretch', height: 500 }}
+                        style={{ alignSelf: 'stretch', height: 200 }}
                     />
                     </View>
                     <Text style={{color: '#fff', fontSize: 20, letterSpacing: 1}}>Serie</Text>
@@ -41,9 +41,9 @@ export default function Lastest() {
                     <YouTube
                         apiKey={'AIzaSyBNTpKXLmASqFaubwPSOdC2SndWWOGFHe4'}
                         videoId={'UZggozsVz9M'}
-                        play
+                        key={3}
                         loop
-                        style={{ alignSelf: 'stretch', height: 500 }}
+                        style={{ alignSelf: 'stretch', height: 200 }}
                     />
                     </View>
                     <Text style={{color: '#fff', fontSize: 20, letterSpacing: 1}}>Peliculas</Text>

@@ -21,7 +21,9 @@ export default function Series(props) {
                             <Text style={styles.boxTextDesc}>Seasons: 5</Text>
                             <TouchableOpacity style={styles.playIconContainer} onPress={() => {
                                 navigation.navigate("Details", {
-                                    item: 'Tm7dFM_v57A'
+                                    item: {
+                                      video: 'Tm7dFM_v57A'
+                                    }
                                 });
                             }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
@@ -35,7 +37,9 @@ export default function Series(props) {
                             <Text style={styles.boxTextDesc}>Seasons: 3</Text>
                             <TouchableOpacity style={styles.playIconContainer} onPress={() => {
                                 navigation.navigate("Details", {
-                                    item: 'zmgYlYw7Uwk'
+                                    item: {
+                                      video: 'zmgYlYw7Uwk'
+                                    }
                                 });
                             }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
@@ -49,7 +53,9 @@ export default function Series(props) {
                             <Text style={styles.boxTextDesc}>Seasons: 10</Text>
                             <TouchableOpacity style={styles.playIconContainer} onPress={() => {
                                 navigation.navigate("Details", {
-                                    item: 'MfvvhM6IJS0'
+                                    item: {
+                                      video: 'MfvvhM6IJS0'
+                                    }
                                 });
                             }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
@@ -66,7 +72,9 @@ export default function Series(props) {
                             <Text style={styles.boxTextDesc}>Seasons: 1</Text>
                             <TouchableOpacity style={styles.playIconContainer} onPress={() => {
                                 navigation.navigate("Details", {
-                                    item: 'oqxAJKy0ii4'
+                                    item: {
+                                      video: 'oqxAJKy0ii4'
+                                    }
                                 });
                             }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
@@ -80,7 +88,9 @@ export default function Series(props) {
                             <Text style={styles.boxTextDesc}>Seasons: 1</Text>
                             <TouchableOpacity style={styles.playIconContainer} onPress={() => {
                                 navigation.navigate("Details", {
-                                    item: 'TV3s2STA7NU'
+                                    item: {
+                                      video: 'TV3s2STA7NU'
+                                    }
                                 });
                             }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
@@ -94,7 +104,9 @@ export default function Series(props) {
                             <Text style={styles.boxTextDesc}>Seasons: 8</Text>
                             <TouchableOpacity style={styles.playIconContainer} onPress={() => {
                                 navigation.navigate("Details", {
-                                    item: 'JGYizS6kRTE'
+                                    item: {
+                                      video: 'JGYizS6kRTE'
+                                    }
                                 });
                             }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
@@ -112,7 +124,9 @@ export default function Series(props) {
                             <Text style={styles.boxTextDesc}>Seasons: 6</Text>
                             <TouchableOpacity style={styles.playIconContainer} onPress={() => {
                                 navigation.navigate("Details", {
-                                    item: 'KTu8iDynwNc'
+                                    item: {
+                                     video: 'KTu8iDynwNc'
+                                    }
                                 });
                             }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
@@ -126,7 +140,9 @@ export default function Series(props) {
                             <Text style={styles.boxTextDesc}>Seasons: 3</Text>
                             <TouchableOpacity style={styles.playIconContainer} onPress={() => {
                                 navigation.navigate("Details", {
-                                    item: 'ETY44yszyNc'
+                                    item: {
+                                      video: 'ETY44yszyNc' 
+                                    } 
                                 });
                             }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
@@ -141,7 +157,9 @@ export default function Series(props) {
                             <Text style={styles.boxTextDesc}>Seasons: 2</Text>
                             <TouchableOpacity style={styles.playIconContainer} onPress={() => {
                                 navigation.navigate("Details", {
-                                    item: 'KcBStos46EM'
+                                    item: {
+                                     video: 'KcBStos46EM'
+                                    }
                                 });
                             }}>
                                 <FontAwesome5  name='play' size={22} color='#02ad94' style={{marginLeft: 4}} />
